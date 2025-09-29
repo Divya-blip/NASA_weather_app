@@ -83,9 +83,7 @@ export function CalendarIntegration({ selectedDate, onDateSelect }: CalendarInte
       <div className="mt-6">
         <p className="text-sm font-medium mb-3">Quick Options:</p>
         <div className="grid grid-cols-2 gap-2">
-          <Button variant="outline" size="sm" onClick={() => setQuickDate(0)}>
-            Today
-          </Button>
+    
           <Button variant="outline" size="sm" onClick={() => setQuickDate(1)}>
             Tomorrow
           </Button>
@@ -94,6 +92,9 @@ export function CalendarIntegration({ selectedDate, onDateSelect }: CalendarInte
           </Button>
           <Button variant="outline" size="sm" onClick={() => setQuickDate(30)}>
             Next Month
+          </Button>
+          <Button variant="outline" size="sm" onClick={() => setQuickDate(90)}>
+            Next 3 Months
           </Button>
         </div>
       </div>
